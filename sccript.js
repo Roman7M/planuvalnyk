@@ -22,23 +22,19 @@ notesTabButton.onclick = function () {
   tasksTabButton.classList.remove("active");
 };
 
-
 addButton.onclick = function () {
   const text = input.value;
   if (text === "") return;
 
   const item = document.createElement("li");
 
-  
   const taskText = document.createElement("span");
   taskText.textContent = text;
 
-  
   taskText.onclick = function () {
     item.classList.toggle("completed");
   };
 
-  
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "❌";
 
