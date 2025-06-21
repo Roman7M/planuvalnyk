@@ -1,10 +1,10 @@
-const input = document.getElementById("taskInput");
-const addButton = document.getElementById("addTaskBtn");
-const list = document.getElementById("taskList");
-const tasksTabButton = document.getElementById("tasksTabBtn");
-const notesTabButton = document.getElementById("notesTabBtn");
-const tasksTab = document.getElementById("tasksTab");
-const notesTab = document.getElementById("notesTab");
+let  input = document.getElementById("taskInput");
+let  addButton = document.getElementById("addTaskBtn");
+let  list = document.getElementById("taskList");
+let  tasksTabButton = document.getElementById("tasksTabBtn");
+let  notesTabButton = document.getElementById("notesTabBtn");
+let  tasksTab = document.getElementById("tasksTab");
+let  notesTab = document.getElementById("notesTab");
 
 tasksTabButton.onclick = function () {
   tasksTab.classList.add("active");
