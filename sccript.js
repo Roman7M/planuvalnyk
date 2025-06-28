@@ -35,16 +35,19 @@ addButton.onclick = function () {
     item.classList.toggle("completed");
   };
 
+const dateInput = document.createElement("input");
+  dateInput.type = "datetime-local";
+
   const deleteBtn = document.createElement("button");
   deleteBtn.textContent = "❌";
-
-  deleteBtn.onclick = function (event) {
+  deleteBtn.onclick = function () {
     item.remove();
   };
 
   item.appendChild(taskText);
+  item.appendChild(dateInput);
   item.appendChild(deleteBtn);
   list.appendChild(item);
 
-  input.value = ""; 
+  input.value = "";
 };
