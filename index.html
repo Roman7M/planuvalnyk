@@ -2,19 +2,24 @@
 <head>
   <title>Простий планувальник</title>
 </head>
-<body>
+<body style="background-color: lightgray; margin: 0;">
+  <header style="background-clor: cyan;">
+  </header>
   <h1>Планувальник</h1>
   <div class="tabs">
     <button id="tasksTabBtn" class="active">Завдання</button>
     <button id="notesTabBtn">Нотатки</button>
   </div>
+
   <div id="tasksTab" class="tab active">
     <input id="taskInput" type="text" placeholder="Введи завдання" />
     <button id="addTaskBtn">Додати</button>
     <ul id="taskList"></ul>
   </div>
+
   <div id="notesTab" class="tab">
-    <textarea id="notesArea"></textarea>
+    <textarea id="notesArea" type="text" placeholder="Запиши нотатки..."></textarea>
   </div>
+
 </body>
 </html>
